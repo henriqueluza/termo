@@ -2,7 +2,13 @@
 
 import React from "react";
 
-const Board = ({ guesses, currentGuess, currentRow, gameStatus }) => {
+const Board = ({
+  guesses,
+  currentGuess,
+  currentRow,
+  gameStatus,
+  secretWord,
+}) => {
   // Criando uma matriz 6x5 para o tabuleiro
   const board = Array(6)
     .fill()
@@ -34,22 +40,22 @@ const Board = ({ guesses, currentGuess, currentRow, gameStatus }) => {
       return baseClass;
     }
 
-    // Verificar o status da letra nos palpites completos
-    const guess = guesses[rowIndex];
-    if (!guess) return baseClass;
+    // Para linhas com palpites já validados
+    if (rowIndex < currentRow || gameStatus !== "playing") {
+      const letter = board[rowIndex][colIndex];
 
-    const letter = guess[colIndex];
-    const expectedWord = guesses.length > 0 ? guesses[0].answer : "";
+      if (!letter || !secretWord) return baseClass;
 
-    if (!letter || !expectedWord) return baseClass;
-
-    if (letter === expectedWord[colIndex]) {
-      return `${baseClass} correct animated`;
-    } else if (expectedWord.includes(letter)) {
-      return `${baseClass} present animated`;
-    } else {
-      return `${baseClass} absent animated`;
+      if (letter === secretWord[colIndex]) {
+        return `${baseClass} correct animated`;
+      } else if (secretWord.includes(letter)) {
+        return `${baseClass} present animated`;
+      } else {
+        return `${baseClass} absent animated`;
+      }
     }
+
+    return baseClass;
   };
 
   return (
