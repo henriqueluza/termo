@@ -67,6 +67,12 @@ export const WORDS = [
   "salto",
   "sinal",
   "curso",
+  "odeia",
+  "viver",
+  "fugir",
+  "morte",
+  "forte",
+  "fazer",
 ];
 
 // Função para selecionar uma palavra aleatória
