@@ -91,13 +91,15 @@ body {
 
 .keyboard {
   margin: 20px auto;
-  max-width: 500px;
+  max-width: 650px;
+  width: 100%;
+  padding: 10px;
 }
 
 .keyboard-row {
   display: flex;
   justify-content: center;
-  margin: 5px 0;
+  margin: 8px 0;
   touch-action: manipulation;
 }
 
@@ -105,9 +107,9 @@ body {
   font-weight: bold;
   border: 0;
   padding: 0;
-  margin: 0 4px;
-  height: 58px;
-  border-radius: 4px;
+  margin: 0 5px;
+  height: 70px;
+  border-radius: 6px;
   cursor: pointer;
   user-select: none;
   background-color: var(--cor-tecla);
@@ -117,13 +119,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.8rem;
-  min-width: 20px;
+  font-size: 1.2rem;
+  min-width: 40px;
 }
 
 .key-wide {
-  flex: 1.5;
-  font-size: 0.75rem;
+  flex: 1.8;
+  font-size: 1rem;
 }
 
 .correct {
