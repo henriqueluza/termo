@@ -7,6 +7,7 @@ import GameNavbar from "./components/Navbar";
 import Board from "./components/Board";
 import Keyboard from "./components/Keyboard";
 import { getRandomWord, isValidWord } from "./utils/words";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [secretWord, setSecretWord] = useState("");
@@ -141,6 +142,7 @@ export default function Home() {
         </div>
         <Keyboard onKeyPress={handleKeyPress} guessedLetters={guessedLetters} />
       </Container>
+      <Footer />
     </main>
   );
 }

@@ -183,3 +183,34 @@ body {
     transform: translateX(0);
   }
 }
+
+/* Estilos para o footer */
+.footer {
+  background-color: var(--cor-fundo);
+  border-top: 1px solid var(--cor-borda);
+  padding: 15px 0;
+}
+
+.footer-content {
+  color: var(--cor-texto);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-link {
+  color: var(--cor-tecla);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--cor-posicao-errada);
+  text-decoration: underline;
+}
+
+/* Garantir que o footer fique no fim da página */
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
