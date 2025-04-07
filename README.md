@@ -2,6 +2,8 @@
 
 Este é um jogo de Termo, implementado com Next.js, React e Bootstrap. O objetivo do jogo é adivinhar uma palavra secreta em até 6 tentativas, fornecendo feedback sobre quais letras estão corretas ou no lugar correto. O projeto foi feito com o intuito de aprender sobre Next.js, React e arquivos JSX e Bootstrap.
 
+O projeto foi desenvolvido com o objetivo de iniciar o aprendizado em React e Next.js, aprendendo sobre componentes, arquivos JSX e a estrutura "Padrão" de um projeto feito utilizando React.
+
 ## Tecnologias Usadas
 
 * Next.js
@@ -14,7 +16,7 @@ Este é um jogo de Termo, implementado com Next.js, React e Bootstrap. O objetiv
 
 ```
 git clone https://github.com/henriqueluza/termo.git
-cd termo-react
+cd termo
 ```
 
 2. Instale as dependências
